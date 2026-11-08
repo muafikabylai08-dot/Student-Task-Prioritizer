@@ -1,0 +1,93 @@
+{
+  "n_rows": 100,
+  "n_train": 80,
+  "n_test": 20,
+  "features": [
+    "difficulty",
+    "days_left",
+    "estimated_hours",
+    "importance"
+  ],
+  "best_params": {
+    "max_depth": 3,
+    "min_samples_leaf": 3
+  },
+  "cv_accuracy_train_mean": 0.7,
+  "cv_accuracy_train_std": 0.073,
+  "test_accuracy": 0.7,
+  "test_macro_f1": 0.673,
+  "baseline_majority_class": "Low",
+  "baseline_test_accuracy": 0.4,
+  "confusion_matrix_labels": [
+    "High",
+    "Medium",
+    "Low"
+  ],
+  "confusion_matrix": [
+    [
+      2,
+      2,
+      0
+    ],
+    [
+      1,
+      5,
+      2
+    ],
+    [
+      0,
+      1,
+      7
+    ]
+  ],
+  "per_class": {
+    "High": {
+      "precision": 0.667,
+      "recall": 0.5,
+      "f1-score": 0.571,
+      "support": 4.0
+    },
+    "Medium": {
+      "precision": 0.625,
+      "recall": 0.625,
+      "f1-score": 0.625,
+      "support": 8.0
+    },
+    "Low": {
+      "precision": 0.778,
+      "recall": 0.875,
+      "f1-score": 0.824,
+      "support": 8.0
+    }
+  },
+  "feature_importance": {
+    "difficulty": 0.087,
+    "days_left": 0.588,
+    "estimated_hours": 0.119,
+    "importance": 0.206
+  },
+  "ablation_numeric_only_cv": 0.613,
+  "ablation_with_categorical_cv": 0.596,
+  "comparison_cv": [
+    {
+      "method": "Decision Tree (выбран)",
+      "cv_accuracy_mean": 0.612,
+      "cv_accuracy_std": 0.088
+    },
+    {
+      "method": "Logistic Regression",
+      "cv_accuracy_mean": 0.818,
+      "cv_accuracy_std": 0.088
+    },
+    {
+      "method": "k-NN (k=5)",
+      "cv_accuracy_mean": 0.655,
+      "cv_accuracy_std": 0.086
+    },
+    {
+      "method": "Random Forest",
+      "cv_accuracy_mean": 0.668,
+      "cv_accuracy_std": 0.087
+    }
+  ]
+}

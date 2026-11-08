@@ -1,0 +1,22 @@
+|--- days_left <= 6.50
+|   |--- days_left <= 1.50
+|   |   |--- importance <= 3.50
+|   |   |   |--- class: High
+|   |   |--- importance >  3.50
+|   |   |   |--- class: High
+|   |--- days_left >  1.50
+|   |   |--- difficulty <= 2.50
+|   |   |   |--- class: Low
+|   |   |--- difficulty >  2.50
+|   |   |   |--- class: Medium
+|--- days_left >  6.50
+|   |--- estimated_hours <= 5.50
+|   |   |--- difficulty <= 2.50
+|   |   |   |--- class: Low
+|   |   |--- difficulty >  2.50
+|   |   |   |--- class: Low
+|   |--- estimated_hours >  5.50
+|   |   |--- importance <= 1.50
+|   |   |   |--- class: Low
+|   |   |--- importance >  1.50
+|   |   |   |--- class: Medium
